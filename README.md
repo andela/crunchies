@@ -10,4 +10,13 @@ Since you are all really busy with day-to-day life, Crunchies will automatically
 
 ## Installation
 
-Run `sudo curl https://raw.githubusercontent.com/andela/crunchies/master/install.sh | bash` on terminal to install
+###Steps
+1. Open the Terminal app on your Mac
+2. Copy and paste `sudo curl https://raw.githubusercontent.com/andela/crunchies/master/install.sh | bash` into the Terminal window
+3. Press enter after pasting
+4. Watch the installation magic happen and enter password when prompted
+
+
+####Notes
+1. You will be required to enter your password twice
+2. While you enter your password, you will not see the characters as you type (dont worry, this is normal :) )

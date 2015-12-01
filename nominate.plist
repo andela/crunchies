@@ -20,7 +20,7 @@
   <key>StartCalendarInterval</key>
   <dict>
       <key>Hour</key>
-      <integer>12s</integer>
+      <integer>12</integer>
       <key>Minute</key>
       <integer>00</integer>
   </dict>
