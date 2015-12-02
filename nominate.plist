@@ -20,9 +20,9 @@
   <key>StartCalendarInterval</key>
   <dict>
       <key>Hour</key>
-      <integer>13</integer>
+      <integer>16</integer>
       <key>Minute</key>
-      <integer>00</integer>
+      <integer>30</integer>
   </dict>
   <key>StandardOutPath</key>
   <string>/tmp/turtle.out</string>
