@@ -10,6 +10,12 @@ git clone https://github.com/andela/crunchies.git
 
 cd crunchies
 
+BREW=`which brew`
+if [[ "$BREW" != "/usr/local/bin/brew" ]]; then
+  # User does not have brew installed
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
 if [[ "$OSTYPE" == "darwin15"* ]]; then
   # El Capitan
   brew reinstall python
