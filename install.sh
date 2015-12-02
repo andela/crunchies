@@ -14,7 +14,7 @@ brew install chromedriver
 
 sudo pip install -r requirements.txt
 
-sudo cp -avr ~/Downloads/crunchies/nominate.app /Applications/nominate.app
+sudo cp -vr ~/Downloads/crunchies/nominate.app /Applications/nominate.app
 sudo cp -av ~/Downloads/crunchies/nominate.plist /Library/LaunchAgents/nominate.plist
 
 launchctl load /Library/LaunchAgents/nominate.plist
