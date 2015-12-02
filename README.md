@@ -22,4 +22,5 @@ This installation may take up to 10 minutes if you're new to Terminal and have n
   * Copy and paste `sudo curl https://raw.githubusercontent.com/andela/crunchies/master/install.sh | bash` into the Terminal window
   * Press Enter
   * Enter your Mac password [While you enter your password, you will not see the characters as you type (dont worry, this is normal :) )]
-5. Watch the installation magic happen and enter Mac password when/if prompted
+4. Watch the installation magic happen and enter Mac password when/if prompted
+5. If installation completes correctly, you will get a notification at 4:30PM everyday when the Auto-Nominater will run
