@@ -12,6 +12,7 @@ Since you are all really busy with day-to-day life, Crunchies will automatically
 
 ###Steps
 1. Open the Terminal app on your Mac
+2. Install git. Type `git` in Terminal and press enter. Follow the prompts that follow. [Skip this step if you're a git user]
 2. Copy and paste `sudo curl https://raw.githubusercontent.com/andela/crunchies/master/install.sh | bash` into the Terminal window
 3. Press enter after pasting
 4. Watch the installation magic happen and enter password when prompted
