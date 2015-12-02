@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 echo installing Andela Crunchies Auto-Nominater....
 
 cd ~/Downloads
