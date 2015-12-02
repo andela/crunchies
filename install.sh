@@ -4,7 +4,12 @@ echo installing Andela Crunchies Auto-Nominater....
 
 cd ~/Downloads
 
-git clone https://github.com/andela/crunchies.git && cd crunchies
+function clone_crunchies {
+  git clone https://github.com/andela/crunchies.git 
+  cd crunchies
+}
+
+clone_crunchies
 
 BREW=`which brew`
 if [[ "$BREW" != "/usr/local/bin/brew" ]]; then
