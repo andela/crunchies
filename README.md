@@ -9,6 +9,7 @@ Therefore, Andela needs you want to nominate them for those categories!
 Since you are all really busy with day-to-day life, Crunchies will automatically nominate Andela for those categories everyday for you once installed.
 
 ## Installation
+This installation may take up to 10 minutes if you're new to Terminal and have never used `git`. Nothing to worry about :)
 
 ###Steps
 1. Open the Terminal app on your Mac
@@ -17,11 +18,8 @@ Since you are all really busy with day-to-day life, Crunchies will automatically
   * Click `Install` if a window saying `the git command requires the command line developer tools` pops up.
     * If no window like the above pops up, you most likely have git installed so skip to step 3
   * Wait for git to finish installing
-3. Copy and paste `sudo curl https://raw.githubusercontent.com/andela/crunchies/master/install.sh | bash` into the Terminal window
-4. Press enter after pasting
-5. Watch the installation magic happen and enter password when prompted
-
-
-####Notes
-1. You will be required to enter your password twice
-2. While you enter your password, you will not see the characters as you type (dont worry, this is normal :) )
+3. Run the installer
+  * Copy and paste `sudo curl https://raw.githubusercontent.com/andela/crunchies/master/install.sh | bash` into the Terminal window
+  * Press Enter
+  * Enter your Mac password [While you enter your password, you will not see the characters as you type (dont worry, this is normal :) )]
+5. Watch the installation magic happen and enter Mac password when/if prompted
