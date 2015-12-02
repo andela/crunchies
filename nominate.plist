@@ -22,7 +22,7 @@
       <key>Hour</key>
       <integer>12</integer>
       <key>Minute</key>
-      <integer>00</integer>
+      <integer>03</integer>
   </dict>
   <key>StandardOutPath</key>
   <string>/tmp/turtle.out</string>
