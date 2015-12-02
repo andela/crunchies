@@ -10,10 +10,15 @@ git clone https://github.com/andela/crunchies.git
 
 cd crunchies
 
-sudo easy_install pip
+if [[ "$OSTYPE" == "darwin15"* ]]; then
+  # El Capitan
+  brew reinstall python
+else
+  #Older Mac Versions
+  sudo easy_install pip
+fi
 
 brew install chromedriver
-
 sudo pip install -r requirements.txt
 
 sudo cp -vr ~/Downloads/crunchies/nominate.app /Applications/nominate.app
