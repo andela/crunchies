@@ -6,7 +6,9 @@ echo installing Andela Crunchies Auto-Nominater....
 
 cd ~/Downloads
 
-git clone https://github.com/andela/crunchies.git && cd crunchies
+git clone https://github.com/andela/crunchies.git
+
+cd crunchies
 
 sudo easy_install pip
 
