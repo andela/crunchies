@@ -20,10 +20,12 @@ fi
 if [[ "$OSTYPE" == "darwin15"* ]]; then
   # El Capitan
   brew reinstall python
+  echo 'PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"' >> ~/.bash_profile
 else
   #Older Mac Versions
   sudo easy_install pip
 fi
+
 
 brew install chromedriver
 sudo pip install -r requirements.txt
