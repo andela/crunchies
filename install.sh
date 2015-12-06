@@ -6,7 +6,6 @@ function go_to_downloads_directory {
   cd ~/Downloads
 }
 
-
 function clone_crunchies {
   git clone https://github.com/andela/crunchies.git 
   cd crunchies
@@ -49,7 +48,11 @@ function launch_scheduler {
 }
 
 function clean_up {
-  sudo rm -rf ~/Downloads/crunchies
+  CRUNCHIES_DIRECTORY = "~/Downloads/crunchies"
+  if [ -d "$CRUNCHIES_DIRECTORY" ]; then
+    # Control will enter here if $DIRECTORY exists.
+    sudo rm -rf "$CRUNCHIES_DIRECTORY"
+  fi
 }
 
 function display_completion_notification {
@@ -61,6 +64,7 @@ function close_terminal {
 }
 
 go_to_downloads_directory
+clean_up
 clone_crunchies
 assert_user_has_homebrew
 give_el_capitan_users_the_good_python_give_older_os_users_pip
