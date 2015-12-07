@@ -58,7 +58,7 @@ function launch_scheduler {
 function clean_up {
   echo -e "\e[34m clean up"
   CRUNCHIES_DIRECTORY="~/Downloads/crunchies"
-  if [ -d "$CRUNCHIES_DIRECTORY" ]; then
+  if [ eval -d "$CRUNCHIES_DIRECTORY" ]; then
     # Control will enter here if $DIRECTORY exists.
     echo -e "\e[34m deleting already existing crunchies directory"
     eval sudo rm -rf "$CRUNCHIES_DIRECTORY"
