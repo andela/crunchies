@@ -60,7 +60,7 @@ function clean_up {
   CRUNCHIES_DIRECTORY="~/Downloads/crunchies"
   if [ -d "$CRUNCHIES_DIRECTORY" ]; then
     # Control will enter here if $DIRECTORY exists.
-    sudo rm -rf "$CRUNCHIES_DIRECTORY"
+    eval sudo rm -rf "$CRUNCHIES_DIRECTORY"
   fi
 }
 
