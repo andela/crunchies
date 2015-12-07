@@ -1,20 +1,20 @@
 #!/bin/bash
 
-echo "installing Andela Crunchies Auto-Nominater...."
+echo -e "\e[34m installing Andela Crunchies Auto-Nominater...."
 
 function go_to_downloads_directory {
-  echo "change directory to Downloads"
+  echo -e "\e[34m change directory to Downloads"
   cd ~/Downloads
 }
 
 function clone_crunchies {
-  echo "cloning crunchies repo...."
+  echo -e "\e[34m cloning crunchies repo...."
   git clone https://github.com/andela/crunchies.git 
   cd crunchies
 }
 
 function assert_user_has_homebrew {
-  echo "assert that user has homebrew installed"
+  echo -e "\e[34m assert that user has homebrew installed"
   BREW=`which brew`
   if [[ "$BREW" != "/usr/local/bin/brew" ]]; then
     # User does not have brew installed
@@ -23,7 +23,7 @@ function assert_user_has_homebrew {
 }
 
 function give_el_capitan_users_the_good_python_give_older_os_users_pip {
-  echo "make sure El Capitan users have a stable version of python and pip"
+  echo -e "\e[34m make sure El Capitan users have a stable version of python and pip"
   if [[ "$OSTYPE" == "darwin15"* ]]; then
     # El Capitan
     brew reinstall python
@@ -35,43 +35,43 @@ function give_el_capitan_users_the_good_python_give_older_os_users_pip {
 }
 
 function install_chromedriver {
-  echo "install chromedriver"
+  echo -e "\e[34m install chromedriver"
   brew install chromedriver
 }
 
 function globally_install_python_requirements {
-  echo "install python script requirements and dependencies"
+  echo -e "\e[34m install python script requirements and dependencies"
   sudo pip install -r requirements.txt
 }
 
 function copy_app_and_launcher_config {
-  echo "copy app to Applications and set launch config"
+  echo -e "\e[34m copy app to Applications and set launch config"
   sudo cp -vr ~/Downloads/crunchies/nominate.app /Applications/nominate.app
   sudo cp -av ~/Downloads/crunchies/nominate.plist /Library/LaunchAgents/nominate.plist
 }
 
 function launch_scheduler {
-  echo "launch scheduler config"
+  echo -e "\e[34m launch scheduler config"
   launchctl load /Library/LaunchAgents/nominate.plist
 }
 
 function clean_up {
-  echo "clean up"
+  echo -e "\e[34m clean up"
   CRUNCHIES_DIRECTORY="~/Downloads/crunchies"
   if [ -d "$CRUNCHIES_DIRECTORY" ]; then
     # Control will enter here if $DIRECTORY exists.
-    echo "deleting already existing crunchies directory"
+    echo -e "\e[34m deleting already existing crunchies directory"
     eval sudo rm -rf "$CRUNCHIES_DIRECTORY"
   fi
 }
 
 function display_completion_notification {
-  echo "display notification"
+  echo -e "\e[34m display notification"
   osascript -e 'display notification "Crunchies Installation complete!" with title "Andela Crunchies"'
 }
 
 function close_terminal {
-  echo "close terminal window"
+  echo -e "\e[34m close terminal window"
   osascript -e 'tell application "Terminal" to close first window' & exit
 }
 
